@@ -1,0 +1,26 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.gradient-text {
+    background: -webkit-linear-gradient(45deg, #a6ffcb, #12d8fa, #1fa2ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tag {
+    background-color: rgba(166, 255, 203, 0.2);
+    color: #a6ffcb;
+}
