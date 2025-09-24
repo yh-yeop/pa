@@ -15,15 +15,16 @@
 
         <!-- 메인 타이틀 카드 -->
         <header class="text-center mb-12">
-            <h1 class="text-5xl md:text-7xl font-black gradient-text mb-4">NEXUS</h1>
+            <h1 class="text-5xl md:text-20xl font-black gradient-text mb-4">NEXUS</h1>
             <h2 class="text-2xl md:text-3xl font-bold text-gray-200">정보의 흐름으로 역사를 꿰뚫다</h2>
-            <p class="text-gray-400 mt-2">10619 윤호엽</p>
+            <p class="text-gray-400 mt-5 text-2xl">10619 윤호엽</p>
         </header>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <!-- 카드 그리드 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 print:grid-cols-1">
 
             <!-- 1. 도서 선정 이유 -->
-            <div class="card rounded-2xl p-8 col-span-1 md:col-span-2 lg:col-span-1">
+            <div class="card rounded-2xl p-8">
                 <h3 class="text-2xl font-bold mb-4 border-b-2 border-cyan-400 pb-2 inline-block">1. 이 책을 선정한 이유</h3>
                 <p class="text-gray-300 mb-4">
                     <strong>사피엔스</strong>로 인류의 과거를, <strong>호모 데우스</strong>로 미래를 조망했던 유발 하라리가 이번엔 <strong>정보</strong>라는 열쇠로 역사를 재해석한다는 점이 흥미로웠습니다. 인공지능(AI)이 세상을 바꾸는 지금, 정보의 본질과 힘을 이해하는 것은 시대의 필수 과제라고 생각했습니다.
@@ -34,7 +35,7 @@
             </div>
 
             <!-- 2. 줄거리 -->
-            <div class="card rounded-2xl p-8 col-span-1 md:col-span-2 lg:col-span-1">
+            <div class="card rounded-2xl p-8">
                 <h3 class="text-2xl font-bold mb-4 border-b-2 border-cyan-400 pb-2 inline-block">2. 핵심 줄거리</h3>
                 <p class="text-gray-300 mb-6"><strong>넥서스</strong>는 인류의 역사가 곧 정보 네트워크의 역사임을 보여줍니다. 돌도끼에서 시작된 정보 전달이 어떻게 문자, 인쇄술, 그리고 인터넷을 거치며 권력과 사회를 재편했는지 추적합니다. 특히 정보가 특정 임계점(넥서스)을 넘으면 현실 자체를 규제하게 된다는 통찰은 AI 시대를 앞둔 우리에게 큰 울림을 줍니다.</p>
                 <ul class="space-y-3 text-gray-200">
@@ -46,8 +47,8 @@
             </div>
 
             <!-- 3. 느낀점 -->
-            <div class="card rounded-2xl p-8 col-span-1 md:col-span-2">
-                 <div class="md:flex md:items-center md:space-x-8">
+            <div class="card card-3 rounded-2xl p-8 col-span-2">
+                <div class="md:flex md:items-center md:space-x-8">
                     <div class="md:w-1/2">
                         <h3 class="text-2xl font-bold mb-4 border-b-2 border-cyan-400 pb-2 inline-block">3. 생각의 변화와 느낀점</h3>
                         <p class="text-gray-300 mb-4">
@@ -55,17 +56,17 @@
                         </p>
                     </div>
                     <div class="md:w-1/2 mt-6 md:mt-0">
-                         <img src="images/image2.jpg" alt="새로운 관점으로 세상을 바라보는 것을 나타내는 이미지" class="rounded-lg shadow-lg w-full h-auto object-cover">
+                        <img src="images/image2.jpg" alt="새로운 관점으로 세상을 바라보는 것을 나타내는 이미지" class="rounded-lg shadow-lg w-full h-auto object-cover">
                     </div>
                 </div>
             </div>
 
             <!-- 4. 나의 진로 목표 -->
-            <div class="card rounded-2xl p-8 col-span-1 md:col-span-2">
+            <div class="card card-4 rounded-2xl p-8 col-span-2">
                 <h3 class="text-2xl font-bold mb-4 border-b-2 border-cyan-400 pb-2 inline-block">4. 책을 통해 세운 나의 진로 목표</h3>
-                 <div class="md:flex md:items-center md:space-x-8">
+                <div class="md:flex md:items-center md:space-x-8">
                     <div class="md:w-1/2">
-                         <img src="images/image3.jpg" alt="데이터와 사람을 연결하는 진로를 나타내는 이미지" class="rounded-lg shadow-lg w-full h-auto object-cover">
+                        <img src="images/image3.jpg" alt="데이터와 사람을 연결하는 진로를 나타내는 이미지" class="rounded-lg shadow-lg w-full h-auto object-cover">
                     </div>
                     <div class="md:w-1/2 mt-6 md:mt-0">
                         <p class="text-gray-300 mb-4">
@@ -74,6 +75,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </body>

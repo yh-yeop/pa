@@ -2,11 +2,13 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+/* 카드 기본 스타일 */
 .card {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1.5rem;
 }
 
 .card:hover {
@@ -23,4 +25,29 @@ body {
 .tag {
     background-color: rgba(166, 255, 203, 0.2);
     color: #a6ffcb;
+}
+
+/* 카드가 페이지 중간에서 잘리지 않도록 */
+.card {
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+/* 인쇄 시 1번+2번 카드 한 줄, 3~4번 카드 1열 */
+@media print {
+    .grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.5rem !important;
+    }
+
+    .card-3, .card-4 {
+        grid-column: span 2 !important;
+    }
+
+    /* 카드 기본 스타일 유지 */
+    .card {
+        background: inherit !important;
+        color: inherit !important;
+    }
 }
